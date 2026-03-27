@@ -108,6 +108,12 @@ a {
 
 .panel {
   background:
+    linear-gradient(180deg, #d4d8dd 0%, #8d949c 100%) left 8px top 18px / 18px 3px no-repeat,
+    linear-gradient(180deg, #8d949c 0%, #d4d8dd 100%) left 8px top 18px / 3px 16px no-repeat,
+    linear-gradient(180deg, #8d949c 0%, #d4d8dd 100%) left 23px top 18px / 3px 16px no-repeat,
+    linear-gradient(180deg, #d4d8dd 0%, #8d949c 100%) left 8px bottom 18px / 18px 3px no-repeat,
+    linear-gradient(180deg, #8d949c 0%, #d4d8dd 100%) left 8px bottom 5px / 3px 16px no-repeat,
+    linear-gradient(180deg, #8d949c 0%, #d4d8dd 100%) left 23px bottom 5px / 3px 16px no-repeat,
     linear-gradient(90deg, transparent 0 34px, var(--line-red) 34px 36px, transparent 36px),
     repeating-linear-gradient(
       180deg,
@@ -156,6 +162,12 @@ a {
   border: 3px solid rgba(122, 87, 39, 0.22);
   border-radius: 30px;
   background:
+    linear-gradient(180deg, #d4d8dd 0%, #8d949c 100%) left 10px top 22px / 18px 3px no-repeat,
+    linear-gradient(180deg, #8d949c 0%, #d4d8dd 100%) left 10px top 22px / 3px 16px no-repeat,
+    linear-gradient(180deg, #8d949c 0%, #d4d8dd 100%) left 25px top 22px / 3px 16px no-repeat,
+    linear-gradient(180deg, #d4d8dd 0%, #8d949c 100%) left 10px bottom 22px / 18px 3px no-repeat,
+    linear-gradient(180deg, #8d949c 0%, #d4d8dd 100%) left 10px bottom 9px / 3px 16px no-repeat,
+    linear-gradient(180deg, #8d949c 0%, #d4d8dd 100%) left 25px bottom 9px / 3px 16px no-repeat,
     linear-gradient(90deg, transparent 0 40px, rgba(218, 107, 75, 0.28) 40px 42px, transparent 42px),
     repeating-linear-gradient(
       180deg,
