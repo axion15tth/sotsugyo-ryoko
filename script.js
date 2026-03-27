@@ -1,4 +1,18 @@
+const page = document.querySelector(".page");
 const today = document.getElementById("today");
+
+if (page) {
+  window.addEventListener("keydown", (event) => {
+    if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") {
+      return;
+    }
+
+    page.scrollBy({
+      left: event.key === "ArrowRight" ? page.clientWidth : -page.clientWidth,
+      behavior: "smooth",
+    });
+  });
+}
 
 if (today) {
   const formatted = new Intl.DateTimeFormat("ja-JP", {
