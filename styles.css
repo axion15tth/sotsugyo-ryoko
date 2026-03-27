@@ -295,7 +295,8 @@ h3 {
 .member-list,
 .info-stack,
 .meal-grid,
-.overview-list {
+.overview-list,
+.link-stack {
   display: grid;
   gap: 12px;
 }
@@ -327,11 +328,30 @@ h3 {
 .train-card,
 .overview-card,
 .event-card,
-.place-card {
+.place-card,
+.link-card,
+.code-card {
   padding: 14px 16px;
   border: 2px solid rgba(95, 134, 185, 0.16);
   border-radius: 14px 18px 15px 19px;
   background: rgba(255, 255, 255, 0.66);
+}
+
+.link-card {
+  display: grid;
+  gap: 4px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.link-title {
+  font-family: "Yomogi", cursive;
+  font-size: 1.05rem;
+}
+
+.link-note {
+  color: var(--muted);
+  line-height: 1.7;
 }
 
 .member-list.stacked li {
@@ -408,6 +428,16 @@ h3 {
 .place-card {
   display: grid;
   gap: 10px;
+}
+
+.code-card {
+  margin: 0;
+  overflow-x: auto;
+  color: var(--ink);
+  font-family: "SFMono-Regular", "Consolas", monospace;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  white-space: pre;
 }
 
 .place-title {
