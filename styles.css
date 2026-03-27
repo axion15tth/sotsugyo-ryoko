@@ -247,7 +247,9 @@ h1 {
 .cover-no,
 .cover-shiori {
   font-family: "Yomogi", cursive;
+  font-weight: 700;
   color: var(--ink);
+  -webkit-text-stroke: 0.4px rgba(65, 49, 28, 0.42);
   text-shadow:
     2px 2px 0 rgba(255, 255, 255, 0.9),
     5px 5px 0 rgba(248, 224, 135, 0.45);
@@ -267,7 +269,7 @@ h1 {
 
 .arch-center {
   left: 50%;
-  top: 0;
+  top: 10px;
   transform: translateX(-50%);
 }
 
