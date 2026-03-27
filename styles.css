@@ -442,6 +442,11 @@ h3 {
   list-style: none;
 }
 
+.member-list.stacked {
+  display: grid;
+  gap: 18px;
+}
+
 .info-card,
 .meal-card,
 .train-card,
@@ -473,7 +478,7 @@ h3 {
 
 .member-list.stacked li {
   display: grid;
-  gap: 4px;
+  gap: 6px;
   padding: 0;
   border: 0;
   background: transparent;
@@ -537,7 +542,7 @@ h3 {
 
 .ad-page {
   display: grid;
-  align-content: center;
+  align-content: start;
   gap: 18px;
 }
 
@@ -551,6 +556,20 @@ h3 {
   padding: 0;
   border: 0;
   background: transparent;
+}
+
+.member-role,
+.overview-card p,
+.event-card p,
+.event-points,
+.place-card p,
+.source-frame p,
+.source-frame li,
+.note-card p,
+.info-card p,
+.meal-card p,
+.train-card p {
+  font-family: "Klee One", sans-serif;
 }
 
 .ad-shell {
