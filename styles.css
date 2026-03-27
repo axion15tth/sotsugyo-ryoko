@@ -562,6 +562,21 @@ h3 {
   line-height: 1.9;
 }
 
+.ad-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ad-chip {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(120, 86, 38, 0.16);
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
 .ad-box {
   display: grid;
   gap: 6px;
@@ -577,6 +592,28 @@ h3 {
   color: var(--ink);
   font-family: "Yomogi", cursive;
   font-size: 1.02rem;
+}
+
+.ad-cta {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 46px;
+  padding: 0 16px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ff905d 0%, #ea6c44 100%);
+  color: #fffdf8;
+  font-family: "Yomogi", cursive;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 10px 18px rgba(196, 96, 49, 0.24);
+}
+
+.ad-fineprint {
+  margin: 0;
+  color: rgba(91, 76, 52, 0.78);
+  font-size: 0.78rem;
+  line-height: 1.7;
 }
 
 .event-points {
