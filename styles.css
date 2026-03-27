@@ -257,7 +257,7 @@ h1 {
 
 .arch-word {
   position: absolute;
-  font-size: clamp(1.7rem, 7.4vw, 3.5rem);
+  font-size: clamp(2.1rem, 9vw, 4.4rem);
   letter-spacing: 0.02em;
 }
 
@@ -269,7 +269,7 @@ h1 {
 
 .arch-center {
   left: 50%;
-  top: 10px;
+  top: 22px;
   transform: translateX(-50%);
 }
 
@@ -305,6 +305,7 @@ h3 {
 
 .cover-date,
 .cover-names,
+.cover-absence,
 .cover-hint,
 .day-summary,
 .member-role,
@@ -321,9 +322,14 @@ h3 {
 }
 
 .cover-date,
-.cover-names {
+.cover-names,
+.cover-absence {
   font-size: 1.05rem;
   font-weight: 600;
+}
+
+.cover-absence {
+  margin-top: -8px;
 }
 
 .cover-hint {
@@ -631,7 +637,7 @@ h3 {
   }
 
   .arch-word {
-    font-size: 1.45rem;
+    font-size: 1.8rem;
   }
 
   .cover-shiori {
