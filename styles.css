@@ -253,15 +253,14 @@ h1 {
 }
 
 .cover-title-stack span {
-  display: block;
-  width: 100%;
+  display: inline-block;
   padding: 0 12px 8px;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: -0.05em;
-  -webkit-text-stroke: 0.75px rgba(65, 49, 28, 0.46);
+  -webkit-text-stroke: 1px rgba(65, 49, 28, 0.5);
   text-shadow:
     2px 2px 0 rgba(255, 255, 255, 0.95),
-    6px 6px 0 rgba(248, 224, 135, 0.52);
+    7px 7px 0 rgba(248, 224, 135, 0.54);
 }
 
 .cover-title-main {
