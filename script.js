@@ -1,7 +1,19 @@
 const page = document.querySelector(".page");
 const today = document.getElementById("today");
+const contentsCurrent = document.getElementById("contents-current");
 
 if (page) {
+  const contentsLinks = Array.from(document.querySelectorAll(".contents-link[href^='#']"));
+  const pageCards = Array.from(document.querySelectorAll(".page-card[id]"));
+  const trackedPages = contentsLinks
+    .map((link) => {
+      const targetId = link.getAttribute("href")?.slice(1);
+      const target = targetId ? document.getElementById(targetId) : null;
+
+      return targetId && target ? { link, targetId, target } : null;
+    })
+    .filter(Boolean);
+
   const jumpTo = (targetId, updateHash = true) => {
     const target = document.getElementById(targetId);
 
@@ -20,6 +32,40 @@ if (page) {
     }
   };
 
+  const updateContentsState = () => {
+    if (!pageCards.length) {
+      return;
+    }
+
+    const pageCenter = page.scrollLeft + page.clientWidth / 2;
+    let activeCard = pageCards[0];
+    let minDistance = Number.POSITIVE_INFINITY;
+
+    pageCards.forEach((card) => {
+      const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+      const distance = Math.abs(cardCenter - pageCenter);
+
+      if (distance < minDistance) {
+        minDistance = distance;
+        activeCard = card;
+      }
+    });
+
+    const active = trackedPages.find(({ targetId }) => targetId === activeCard.id);
+
+    trackedPages.forEach(({ link, targetId }) => {
+      link.classList.toggle("is-active", targetId === active?.targetId);
+    });
+
+    if (contentsCurrent) {
+      const label =
+        active?.link.textContent?.trim() ||
+        activeCard.querySelector("h2")?.textContent?.trim() ||
+        activeCard.id;
+      contentsCurrent.textContent = `現在地: ${label}`;
+    }
+  };
+
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener("click", (event) => {
       const targetId = link.getAttribute("href")?.slice(1);
@@ -31,6 +77,10 @@ if (page) {
       event.preventDefault();
       jumpTo(targetId);
     });
+  });
+
+  page.addEventListener("scroll", () => {
+    window.requestAnimationFrame(updateContentsState);
   });
 
   window.addEventListener("keydown", (event) => {
@@ -49,6 +99,8 @@ if (page) {
       jumpTo(window.location.hash.slice(1), false);
     });
   }
+
+  window.addEventListener("load", updateContentsState);
 }
 
 if (today) {
