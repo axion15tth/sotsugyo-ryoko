@@ -1,13 +1,14 @@
 :root {
-  --bg: #f5efe4;
-  --surface: rgba(255, 252, 247, 0.84);
-  --ink: #132021;
-  --muted: #5f6766;
-  --line: rgba(19, 32, 33, 0.1);
-  --accent: #e96b3c;
-  --accent-soft: #ffd8c1;
-  --accent-deep: #a93e19;
-  --shadow: 0 24px 60px rgba(28, 32, 34, 0.12);
+  --bg: #efe4d0;
+  --surface: rgba(255, 251, 244, 0.84);
+  --ink: #1c2428;
+  --muted: #5f676c;
+  --line: rgba(28, 36, 40, 0.1);
+  --accent: #dc5f2d;
+  --accent-soft: #ffd4b7;
+  --accent-deep: #8a3115;
+  --teal: #174b55;
+  --shadow: 0 24px 60px rgba(28, 36, 40, 0.14);
 }
 
 * {
@@ -24,9 +25,9 @@ body {
   color: var(--ink);
   font-family: "Zen Kaku Gothic New", sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(233, 107, 60, 0.28), transparent 30%),
-    radial-gradient(circle at bottom right, rgba(17, 117, 108, 0.14), transparent 32%),
-    linear-gradient(180deg, #fffaf1 0%, var(--bg) 55%, #ece1d2 100%);
+    radial-gradient(circle at top left, rgba(220, 95, 45, 0.28), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(23, 75, 85, 0.16), transparent 32%),
+    linear-gradient(180deg, #fffaf3 0%, var(--bg) 58%, #e9d8bf 100%);
 }
 
 body::before {
@@ -38,11 +39,11 @@ body::before {
   background-size: 20px 20px;
   content: "";
   pointer-events: none;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent);
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), transparent);
 }
 
 .page {
-  width: min(100%, 480px);
+  width: min(100%, 520px);
   margin: 0 auto;
   padding: 20px 16px 48px;
 }
@@ -55,7 +56,7 @@ body::before {
   border-radius: 28px;
   background: var(--surface);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(18px);
 }
 
 .hero {
@@ -64,64 +65,81 @@ body::before {
 
 .hero::after {
   position: absolute;
-  top: -48px;
-  right: -36px;
+  top: -44px;
+  right: -30px;
   width: 150px;
   height: 150px;
   border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent-soft), rgba(233, 107, 60, 0.08));
+  background: linear-gradient(135deg, var(--accent-soft), rgba(220, 95, 45, 0.04));
   content: "";
 }
 
 .eyebrow,
 .section-kicker,
-.label {
+.label,
+.info-label,
+.meal-label,
+.day-badge,
+.timeline-time,
+.train-route {
   margin: 0;
   font-family: "Space Grotesk", sans-serif;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 .eyebrow,
-.section-kicker {
+.section-kicker,
+.day-badge,
+.timeline-time,
+.train-route {
   color: var(--accent-deep);
   font-size: 0.8rem;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 h1,
 h2,
 h3,
+h4,
 .value,
-.price-total {
+.info-main,
+.train-main {
   margin: 0;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   line-height: 1.15;
 }
 
 h1 {
   margin-top: 8px;
-  font-size: clamp(2rem, 7vw, 3.2rem);
+  font-size: clamp(2.3rem, 8vw, 3.4rem);
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.65rem;
 }
 
 h3 {
+  font-size: 1.1rem;
+}
+
+h4 {
   font-size: 1rem;
 }
 
 .lead,
+.day-summary,
 .timeline-body p,
 .note-card p,
-.price-caption,
 .footer-copy,
-.footer-meta {
+.footer-meta,
+.meal-card p,
+.train-sub {
   margin: 0;
   color: var(--muted);
   line-height: 1.7;
@@ -129,12 +147,15 @@ h3 {
 
 .lead {
   margin-top: 14px;
-  max-width: 26ch;
+  max-width: 28ch;
 }
 
 .hero-card,
 .link-grid,
+.mission-list,
 .member-list,
+.info-stack,
+.meal-grid,
 .checklist {
   display: grid;
   gap: 12px;
@@ -144,17 +165,37 @@ h3 {
   margin-top: 24px;
   padding: 14px;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.76);
 }
 
-.label {
+.label,
+.info-label,
+.meal-label {
   font-size: 0.72rem;
   color: var(--muted);
+  text-transform: uppercase;
 }
 
-.value {
+.value,
+.info-main,
+.train-main {
   margin-top: 4px;
   font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.hero-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.hero-pill {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.74);
+  font-size: 0.9rem;
   font-weight: 700;
 }
 
@@ -165,7 +206,7 @@ h3 {
 
 .accent {
   background:
-    linear-gradient(135deg, rgba(233, 107, 60, 0.15), rgba(255, 255, 255, 0.8)),
+    linear-gradient(135deg, rgba(220, 95, 45, 0.15), rgba(255, 255, 255, 0.78)),
     var(--surface);
 }
 
@@ -184,7 +225,7 @@ h3 {
   color: var(--ink);
   font-weight: 700;
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.88);
   transition: transform 180ms ease, background-color 180ms ease;
 }
 
@@ -194,39 +235,7 @@ h3 {
   background: #fff;
 }
 
-.timeline {
-  display: grid;
-  gap: 14px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.timeline li {
-  display: grid;
-  grid-template-columns: 72px 1fr;
-  gap: 12px;
-  align-items: start;
-}
-
-.timeline-day {
-  padding-top: 4px;
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 700;
-  color: var(--accent-deep);
-}
-
-.timeline-body {
-  padding: 12px 14px;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.76);
-}
-
-.split {
-  display: grid;
-  gap: 18px;
-}
-
+.mission-list,
 .member-list,
 .checklist {
   margin: 0;
@@ -234,19 +243,71 @@ h3 {
   list-style: none;
 }
 
+.mission-list li,
 .member-list li,
 .checklist li,
-.budget-list div {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 12px 14px;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.76);
+.info-card,
+.meal-card,
+.train-card {
+  padding: 14px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.78);
 }
 
-.member-name,
-.budget-list dd {
+.day-block + .day-block {
+  margin-top: 22px;
+}
+
+.day-header {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.day-badge {
+  min-width: 64px;
+  padding-top: 4px;
+}
+
+.timeline {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline li {
+  display: grid;
+  grid-template-columns: 68px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.timeline-time {
+  padding-top: 4px;
+}
+
+.timeline-body {
+  padding: 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.timeline-body a,
+.info-card a,
+.meal-card a {
+  color: var(--accent-deep);
+  font-weight: 700;
+}
+
+.split {
+  display: grid;
+  gap: 18px;
+}
+
+.member-name {
   font-weight: 700;
 }
 
@@ -254,12 +315,15 @@ h3 {
   color: var(--muted);
 }
 
-.note-card,
-.price-card {
+.note-card {
   padding: 16px;
   border-radius: 22px;
   color: #fff;
-  background: linear-gradient(145deg, #1a5f63, #15353e);
+  background: linear-gradient(145deg, #1b6166, #163740);
+}
+
+.note-card.dark {
+  background: linear-gradient(145deg, #6a2c15, #31150f);
 }
 
 .note-title {
@@ -268,24 +332,16 @@ h3 {
   font-weight: 700;
 }
 
-.price-total {
-  font-size: 1.8rem;
+.train-card + .train-card {
+  margin-top: 10px;
 }
 
-.price-caption {
+.train-sub {
   margin-top: 6px;
-  color: rgba(255, 255, 255, 0.8);
 }
 
-.budget-list {
-  display: grid;
-  gap: 10px;
-  margin: 0;
-}
-
-.budget-list dt,
-.budget-list dd {
-  margin: 0;
+.meal-grid {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .checklist {
@@ -293,7 +349,8 @@ h3 {
 }
 
 .checklist li {
-  min-height: 84px;
+  min-height: 90px;
+  display: flex;
   align-items: flex-end;
   font-weight: 500;
 }
@@ -309,8 +366,12 @@ h3 {
 
 @media (min-width: 640px) {
   .page {
-    width: min(100%, 760px);
+    width: min(100%, 860px);
     padding: 28px 20px 64px;
+  }
+
+  .hero-card {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .split {
@@ -318,7 +379,7 @@ h3 {
     align-items: start;
   }
 
-  .hero-card {
+  .meal-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
