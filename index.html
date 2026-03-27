@@ -6,7 +6,7 @@
     <title>京都卒業旅行しおり</title>
     <meta
       name="description"
-      content="そーりあ、あかれく、どすこいの京都1泊2日しおり。東京駅改札内集合から清水寺、夜の居酒屋、翌朝の伏見稲荷まで、ネタ多めで確認できます。"
+      content="そーりあ、あかれく、どすこいの京都1泊2日しおり。横スワイプで1ページずつ見られる卒業旅行のしおりです。"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,243 +18,382 @@
   </head>
   <body>
     <main class="page">
-      <section class="hero">
-        <p class="eyebrow">Kyoto Final Boss Tour</p>
-        <h1>京都卒業旅行のしおり</h1>
+      <section class="page-card cover-page" id="cover">
+        <div class="cover-badge">卒業旅行 2026</div>
+        <div class="cover-illustrations" aria-hidden="true">
+          <div class="doodle doodle-sun"></div>
+          <div class="doodle doodle-train">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="doodle doodle-temple">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="doodle doodle-ticket"></div>
+        </div>
+        <div class="cover-body">
+          <p class="cover-kicker">KYOTO GRAD TRIP</p>
+          <h1>京都卒業旅行のしおり</h1>
+          <p class="cover-date">2026.03.28 SAT - 03.29 SUN</p>
+          <p class="cover-names">そーりあ / あかれく / どすこい</p>
+        </div>
+        <p class="cover-hint">横にスワイプしてページをめくる</p>
       </section>
 
-      <section class="panel accent">
+      <section class="page-card panel contents-page" id="contents">
         <div class="section-heading">
-          <p class="section-kicker">Index</p>
+          <p class="section-kicker">Contents</p>
           <h2>目次</h2>
         </div>
-        <div class="link-grid">
-          <a class="quick-link" href="#members">メンバー</a>
-          <a class="quick-link" href="#day1">1日目</a>
-          <a class="quick-link" href="#day2">2日目</a>
-          <a class="quick-link" href="#stay">宿と移動</a>
-          <a class="quick-link" href="#meals">ごはん</a>
+        <div class="contents-list">
+          <a class="contents-link" href="#members">メンバー</a>
+          <a class="contents-link" href="#day1-overview">1日目概要</a>
+          <a class="contents-link" href="#day2-overview">2日目概要</a>
+          <a class="contents-link" href="#stay">宿情報</a>
+          <a class="contents-link" href="#transit">移動情報</a>
+          <a class="contents-link" href="#meals">ごはん情報</a>
+          <a class="contents-link" href="#closing">おしまい</a>
         </div>
       </section>
 
-      <section class="panel split" id="members">
-        <div>
-          <div class="section-heading">
-            <p class="section-kicker">Party</p>
-            <h2>メンバー</h2>
-          </div>
-          <ul class="member-list">
-            <li>
-              <span class="member-name">そーりあ</span>
-              <span class="member-role">列車乗車の安定枠</span>
-            </li>
-            <li>
-              <span class="member-name">あかれく</span>
-              <span class="member-role">場のテンション管理担当</span>
-            </li>
-            <li>
-              <span class="member-name">どすこい</span>
-              <span class="member-role">代表名義 / 宿の顔</span>
-            </li>
-          </ul>
+      <section class="page-card panel" id="members">
+        <div class="page-top">
+          <span class="page-label">Page</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
         </div>
+        <div class="section-heading">
+          <p class="section-kicker">Party</p>
+          <h2>メンバー</h2>
+        </div>
+        <ul class="member-list stacked">
+          <li>
+            <span class="member-name">そーりあ</span>
+            <span class="member-role">列車乗車の安定枠</span>
+          </li>
+          <li>
+            <span class="member-name">あかれく</span>
+            <span class="member-role">場のテンション管理担当</span>
+          </li>
+          <li>
+            <span class="member-name">どすこい</span>
+            <span class="member-role">代表名義 / 宿の顔</span>
+          </li>
+        </ul>
         <div class="note-card">
           <p class="note-title">集合ルール</p>
           <p>連絡はDiscord。遅れそうなら「向かってる」ではなく到着見込み時刻を送ること。</p>
         </div>
       </section>
 
-      <section class="panel day-panel" id="day1">
+      <section class="page-card panel overview-page" id="day1-overview">
+        <div class="page-top">
+          <span class="page-label">Day 1</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
         <div class="section-heading">
-          <p class="section-kicker">Schedule</p>
-          <h2>1日目</h2>
+          <p class="section-kicker">Overview</p>
+          <h2>1日目概要</h2>
         </div>
-        <div class="day-header">
-          <p class="day-badge">Day 1</p>
-          <div>
-            <h3>2026年3月28日(土)</h3>
-            <p class="day-summary">東京駅で合流して京都へ。昼から清水寺、夜は居酒屋。</p>
-          </div>
+        <div class="overview-card">
+          <p class="overview-date">2026年3月28日(土)</p>
+          <p>東京駅で集合して京都へ。昼は共有リンク先のお店、午後は清水寺、夜は居酒家くらと。</p>
         </div>
-        <ol class="timeline">
-          <li>
-            <div class="timeline-time">8:00</div>
-            <div class="timeline-body">
-              <h4>東京駅改札内集合</h4>
-              <p>1F中央通路の新幹線南のりかえ口前。改札を出ないで集まれる安全設計。</p>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-time">9:00</div>
-            <div class="timeline-body">
-              <h4>のぞみ135で出発</h4>
-              <p>自由席なので、ここで出遅れると「卒業旅行」ではなく「各自移動」になる。</p>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-time">11:15</div>
-            <div class="timeline-body">
-              <h4>京都着</h4>
-              <p>まずは京都駅で生存確認。荷物を持ったまま無理しない。</p>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-time">11:30</div>
-            <div class="timeline-body">
-              <h4>ホテルに荷物を預ける</h4>
-              <p>京都タワーホテルアネックスは京都駅から徒歩3分。身軽になってから動く。</p>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-time">12:00</div>
-            <div class="timeline-body">
-              <h4>昼食</h4>
-              <p>
-                <a href="https://maps.app.goo.gl/fJ3bciiBsTkNQiFk8?g_st=ic">共有リンク先のお店</a>
-                へ。旅の初手から胃袋のテンションを上げる。
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-time">14:00</div>
-            <div class="timeline-body">
-              <h4>清水寺</h4>
-              <p>有名観光地を正面突破する回。まずは王道で京都を押さえる。</p>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-time">15:30</div>
-            <div class="timeline-body">
-              <h4>二年坂・産寧坂・八坂の塔周辺を散歩</h4>
-              <p>全員が似た構図の写真を撮る時間。ただしそれも卒業旅行の正解。</p>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-time">18:00</div>
-            <div class="timeline-body">
-              <h4>ホテルチェックイン</h4>
-              <p>15:00からチェックイン可。ここで一度HPを回復する。</p>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-time">19:30</div>
-            <div class="timeline-body">
-              <h4>居酒家くらとで夕食</h4>
-              <p>予約済み。3人で着席。遅刻すると「京都の夜」ではなく「予約変更の交渉」になる。</p>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-time">21:00</div>
-            <div class="timeline-body">
-              <h4>余力があれば京都タワー</h4>
-              <p>宿の割引券を回収しつつ、今日一日の移動量に勝手な達成感を与える。</p>
-            </div>
-          </li>
-        </ol>
+        <div class="overview-list">
+          <a class="mini-link" href="#day1-0800">8:00 集合</a>
+          <a class="mini-link" href="#day1-0900">9:00 出発</a>
+          <a class="mini-link" href="#day1-1115">11:15 京都着</a>
+          <a class="mini-link" href="#day1-1130">11:30 荷物預け</a>
+          <a class="mini-link" href="#day1-1200">12:00 昼食</a>
+          <a class="mini-link" href="#day1-1400">14:00 清水寺</a>
+          <a class="mini-link" href="#day1-1530">15:30 散歩</a>
+          <a class="mini-link" href="#day1-1800">18:00 チェックイン</a>
+          <a class="mini-link" href="#day1-1930">19:30 夕食</a>
+          <a class="mini-link" href="#day1-2100">21:00 京都タワー</a>
+        </div>
       </section>
 
-      <section class="panel day-panel" id="day2">
-        <div class="section-heading">
-          <p class="section-kicker">Schedule</p>
-          <h2>2日目</h2>
+      <section class="page-card panel event-page" id="day1-0800">
+        <div class="page-top">
+          <span class="page-label">Day 1 / 8:00</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
         </div>
-        <div class="day-header">
-          <p class="day-badge">Day 2</p>
-          <div>
-            <h3>2026年3月29日(日)</h3>
-            <p class="day-summary">朝から伏見稲荷、昼は未定のまま京都駅周辺、午後は品川経由で同窓会へ。</p>
-          </div>
+        <p class="event-time">8:00</p>
+        <h2>東京駅改札内集合</h2>
+        <div class="event-card">
+          <p>1F中央通路の新幹線南のりかえ口前。改札を出ないで集まれる安全設計。</p>
         </div>
-        <ol class="timeline">
-          <li>
-            <div class="timeline-time">7:30</div>
-            <div class="timeline-body">
-              <h4>起床</h4>
-              <p>1泊2日なので寝坊は即スケジュール崩壊。目覚ましは各自2個推奨。</p>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-time">8:00</div>
-            <div class="timeline-body">
-              <h4>伏見稲荷へ出発</h4>
-              <p>朝のうちに動くと人波を避けやすい。JRで動けるので相性がいい。</p>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-time">8:20</div>
-            <div class="timeline-body">
-              <h4>伏見稲荷大社を散策</h4>
-              <p>千本鳥居で「卒業後もうまくやれますように」を各自投げる時間。</p>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-time">10:15</div>
-            <div class="timeline-body">
-              <h4>ホテルへ戻って荷物回収</h4>
-              <p>チェックアウトは11:00。ここを越えると旅の終盤が急に事務的になる。</p>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-time">11:00</div>
-            <div class="timeline-body">
-              <h4>京都タワー or 京都駅周辺をぶらつく</h4>
-              <p>昼未定なので、この時間は土産とノリで埋める。適当さも思い出の一部。</p>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-time">12:00</div>
-            <div class="timeline-body">
-              <h4>昼食は現地判断</h4>
-              <p>未定。逆に言えば、ここだけは誰かの直感が世界を救う。</p>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-time">13:30</div>
-            <div class="timeline-body">
-              <h4>京都駅に戻ってホームへ</h4>
-              <p>自由時間終了。ここからは「同窓会に間に合わせる班」に切り替える。</p>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-time">14:54</div>
-            <div class="timeline-body">
-              <h4>のぞみ154で帰路</h4>
-              <p>指定席なので着席は安定。寝るか、写真を見返すか、同窓会モードに入るか。</p>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-time">16:59</div>
-            <div class="timeline-body">
-              <h4>品川着</h4>
-              <p>そのまま同窓会へ。京都旅行の余韻を残したまま次のイベントに接続する。</p>
-            </div>
-          </li>
-        </ol>
       </section>
 
-      <section class="panel split" id="stay">
-        <div>
-          <div class="section-heading">
-            <p class="section-kicker">Stay</p>
-            <h2>宿情報</h2>
+      <section class="page-card panel event-page" id="day1-0900">
+        <div class="page-top">
+          <span class="page-label">Day 1 / 9:00</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">9:00</p>
+        <h2>のぞみ135で出発</h2>
+        <div class="event-card">
+          <p>自由席なので、ここで出遅れると「卒業旅行」ではなく「各自移動」になる。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel event-page" id="day1-1115">
+        <div class="page-top">
+          <span class="page-label">Day 1 / 11:15</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">11:15</p>
+        <h2>京都着</h2>
+        <div class="event-card">
+          <p>まずは京都駅で生存確認。荷物を持ったまま無理しない。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel event-page" id="day1-1130">
+        <div class="page-top">
+          <span class="page-label">Day 1 / 11:30</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">11:30</p>
+        <h2>ホテルに荷物を預ける</h2>
+        <div class="event-card">
+          <p>京都タワーホテルアネックスは京都駅から徒歩3分。身軽になってから動く。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel event-page" id="day1-1200">
+        <div class="page-top">
+          <span class="page-label">Day 1 / 12:00</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">12:00</p>
+        <h2>昼食</h2>
+        <div class="event-card">
+          <p><a href="https://maps.app.goo.gl/fJ3bciiBsTkNQiFk8?g_st=ic">共有リンク先のお店</a>へ。旅の初手から胃袋のテンションを上げる。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel event-page" id="day1-1400">
+        <div class="page-top">
+          <span class="page-label">Day 1 / 14:00</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">14:00</p>
+        <h2>清水寺</h2>
+        <div class="event-card">
+          <p>有名観光地を正面突破する回。まずは王道で京都を押さえる。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel event-page" id="day1-1530">
+        <div class="page-top">
+          <span class="page-label">Day 1 / 15:30</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">15:30</p>
+        <h2>二年坂・産寧坂・八坂の塔周辺を散歩</h2>
+        <div class="event-card">
+          <p>全員が似た構図の写真を撮る時間。ただしそれも卒業旅行の正解。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel event-page" id="day1-1800">
+        <div class="page-top">
+          <span class="page-label">Day 1 / 18:00</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">18:00</p>
+        <h2>ホテルチェックイン</h2>
+        <div class="event-card">
+          <p>15:00からチェックイン可。ここで一度HPを回復する。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel event-page" id="day1-1930">
+        <div class="page-top">
+          <span class="page-label">Day 1 / 19:30</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">19:30</p>
+        <h2>居酒家くらとで夕食</h2>
+        <div class="event-card">
+          <p>予約済み。3人で着席。遅刻すると「京都の夜」ではなく「予約変更の交渉」になる。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel event-page" id="day1-2100">
+        <div class="page-top">
+          <span class="page-label">Day 1 / 21:00</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">21:00</p>
+        <h2>余力があれば京都タワー</h2>
+        <div class="event-card">
+          <p>宿の割引券を回収しつつ、今日一日の移動量に勝手な達成感を与える。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel overview-page" id="day2-overview">
+        <div class="page-top">
+          <span class="page-label">Day 2</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <div class="section-heading">
+          <p class="section-kicker">Overview</p>
+          <h2>2日目概要</h2>
+        </div>
+        <div class="overview-card">
+          <p class="overview-date">2026年3月29日(日)</p>
+          <p>朝から伏見稲荷へ。京都駅周辺で昼を探し、午後は品川へ戻ってそのまま同窓会に接続する。</p>
+        </div>
+        <div class="overview-list">
+          <a class="mini-link" href="#day2-0730">7:30 起床</a>
+          <a class="mini-link" href="#day2-0800">8:00 出発</a>
+          <a class="mini-link" href="#day2-0820">8:20 伏見稲荷</a>
+          <a class="mini-link" href="#day2-1015">10:15 荷物回収</a>
+          <a class="mini-link" href="#day2-1100">11:00 ぶらつく</a>
+          <a class="mini-link" href="#day2-1200">12:00 昼食</a>
+          <a class="mini-link" href="#day2-1330">13:30 京都駅へ</a>
+          <a class="mini-link" href="#day2-1454">14:54 帰路</a>
+          <a class="mini-link" href="#day2-1659">16:59 品川着</a>
+        </div>
+      </section>
+
+      <section class="page-card panel event-page" id="day2-0730">
+        <div class="page-top">
+          <span class="page-label">Day 2 / 7:30</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">7:30</p>
+        <h2>起床</h2>
+        <div class="event-card">
+          <p>1泊2日なので寝坊は即スケジュール崩壊。目覚ましは各自2個推奨。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel event-page" id="day2-0800">
+        <div class="page-top">
+          <span class="page-label">Day 2 / 8:00</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">8:00</p>
+        <h2>伏見稲荷へ出発</h2>
+        <div class="event-card">
+          <p>朝のうちに動くと人波を避けやすい。JRで動けるので相性がいい。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel event-page" id="day2-0820">
+        <div class="page-top">
+          <span class="page-label">Day 2 / 8:20</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">8:20</p>
+        <h2>伏見稲荷大社を散策</h2>
+        <div class="event-card">
+          <p>千本鳥居で「卒業後もうまくやれますように」を各自投げる時間。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel event-page" id="day2-1015">
+        <div class="page-top">
+          <span class="page-label">Day 2 / 10:15</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">10:15</p>
+        <h2>ホテルへ戻って荷物回収</h2>
+        <div class="event-card">
+          <p>チェックアウトは11:00。ここを越えると旅の終盤が急に事務的になる。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel event-page" id="day2-1100">
+        <div class="page-top">
+          <span class="page-label">Day 2 / 11:00</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">11:00</p>
+        <h2>京都タワー or 京都駅周辺をぶらつく</h2>
+        <div class="event-card">
+          <p>昼未定なので、この時間は土産とノリで埋める。適当さも思い出の一部。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel event-page" id="day2-1200">
+        <div class="page-top">
+          <span class="page-label">Day 2 / 12:00</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">12:00</p>
+        <h2>昼食は現地判断</h2>
+        <div class="event-card">
+          <p>未定。逆に言えば、ここだけは誰かの直感が世界を救う。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel event-page" id="day2-1330">
+        <div class="page-top">
+          <span class="page-label">Day 2 / 13:30</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">13:30</p>
+        <h2>京都駅に戻ってホームへ</h2>
+        <div class="event-card">
+          <p>自由時間終了。ここからは「同窓会に間に合わせる班」に切り替える。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel event-page" id="day2-1454">
+        <div class="page-top">
+          <span class="page-label">Day 2 / 14:54</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">14:54</p>
+        <h2>のぞみ154で帰路</h2>
+        <div class="event-card">
+          <p>指定席なので着席は安定。寝るか、写真を見返すか、同窓会モードに入るか。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel event-page" id="day2-1659">
+        <div class="page-top">
+          <span class="page-label">Day 2 / 16:59</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <p class="event-time">16:59</p>
+        <h2>品川着</h2>
+        <div class="event-card">
+          <p>そのまま同窓会へ。京都旅行の余韻を残したまま次のイベントに接続する。</p>
+        </div>
+      </section>
+
+      <section class="page-card panel" id="stay">
+        <div class="page-top">
+          <span class="page-label">Stay</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <div class="section-heading">
+          <p class="section-kicker">Stay</p>
+          <h2>宿情報</h2>
+        </div>
+        <div class="info-stack">
+          <div class="info-card">
+            <p class="info-label">ホテル</p>
+            <p class="info-main">京都タワーホテルアネックス</p>
           </div>
-          <div class="info-stack">
-            <div class="info-card">
-              <p class="info-label">ホテル</p>
-              <p class="info-main">京都タワーホテルアネックス</p>
-            </div>
-            <div class="info-card">
-              <p class="info-label">住所</p>
-              <p class="info-main">京都府京都市下京区新町通七条下ル東塩小路町595-1</p>
-            </div>
-            <div class="info-card">
-              <p class="info-label">電話</p>
-              <p class="info-main"><a href="tel:0753617261">075-361-7261</a></p>
-            </div>
-            <div class="info-card">
-              <p class="info-label">チェックイン / アウト</p>
-              <p class="info-main">15:00 / 11:00</p>
-            </div>
+          <div class="info-card">
+            <p class="info-label">住所</p>
+            <p class="info-main">京都府京都市下京区新町通七条下ル東塩小路町595-1</p>
+          </div>
+          <div class="info-card">
+            <p class="info-label">電話</p>
+            <p class="info-main"><a href="tel:0753617261">075-361-7261</a></p>
+          </div>
+          <div class="info-card">
+            <p class="info-label">チェックイン / アウト</p>
+            <p class="info-main">15:00 / 11:00</p>
           </div>
         </div>
         <div class="note-card dark">
@@ -263,22 +402,24 @@
         </div>
       </section>
 
-      <section class="panel split">
-        <div>
-          <div class="section-heading">
-            <p class="section-kicker">Transit</p>
-            <h2>新幹線</h2>
-          </div>
-          <div class="train-card">
-            <p class="train-route">東京 → 京都</p>
-            <p class="train-main">09:00 発 / 11:15 着</p>
-            <p class="train-sub">のぞみ135・自由席</p>
-          </div>
-          <div class="train-card">
-            <p class="train-route">京都 → 品川</p>
-            <p class="train-main">14:54 発 / 16:59 着</p>
-            <p class="train-sub">のぞみ154・指定席</p>
-          </div>
+      <section class="page-card panel" id="transit">
+        <div class="page-top">
+          <span class="page-label">Transit</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
+        <div class="section-heading">
+          <p class="section-kicker">Transit</p>
+          <h2>移動情報</h2>
+        </div>
+        <div class="train-card">
+          <p class="train-route">東京 → 京都</p>
+          <p class="train-main">09:00 発 / 11:15 着</p>
+          <p class="train-sub">のぞみ135・自由席</p>
+        </div>
+        <div class="train-card">
+          <p class="train-route">京都 → 品川</p>
+          <p class="train-main">14:54 発 / 16:59 着</p>
+          <p class="train-sub">のぞみ154・指定席</p>
         </div>
         <div class="note-card">
           <p class="note-title">改札内集合場所</p>
@@ -286,12 +427,16 @@
         </div>
       </section>
 
-      <section class="panel" id="meals">
+      <section class="page-card panel" id="meals">
+        <div class="page-top">
+          <span class="page-label">Meals</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
         <div class="section-heading">
           <p class="section-kicker">Meals</p>
           <h2>ごはん情報</h2>
         </div>
-        <div class="meal-grid">
+        <div class="meal-grid stacked-meals">
           <div class="meal-card">
             <p class="meal-label">1日目 昼</p>
             <h3>共有リンク先のお店</h3>
@@ -311,7 +456,11 @@
         </div>
       </section>
 
-      <section class="panel footer-panel">
+      <section class="page-card panel footer-panel" id="closing">
+        <div class="page-top">
+          <span class="page-label">End</span>
+          <a class="back-link" href="#contents">目次にもどる</a>
+        </div>
         <p class="footer-copy">
           このしおりの目的は、迷わず集合し、ちゃんと食べ、ちゃんと寺を見て、ちゃんと同窓会へ接続することです。
         </p>
